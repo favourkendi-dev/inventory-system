@@ -1,9 +1,7 @@
-
 venv/
 __pycache__/
-*.pyc
+*.py[cod]
 .pytest_cache/
-.DS_Store
-*.egg-info/
+.vscode/
 .env
- 
+.DS_Store
