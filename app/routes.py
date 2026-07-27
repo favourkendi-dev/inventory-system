@@ -45,7 +45,7 @@ def create_item():
     return jsonify(item_schema.dump(new_item)), 201
 
 # Update an existing inventory item
-@inventory_bp.route("/inventory/<int:item_id>", methods=["PATCH"])
+@inventory_bp.route("/inventory/<int:item_id>", methods=["PATCH", "PUT"])
 def update_item(item_id):
     json_data = request.get_json(silent=True)
     if json_data is None:
